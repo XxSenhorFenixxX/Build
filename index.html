@@ -1,54 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Analisador de Build Blox Fruits</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analisador de Build Blox Fruits</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Verifique se sua build é skill abaixo</h1>
-    </header>
+  <header>
+    <h1>Verifique se sua build é skill abaixo</h1>
+  </header>
 
-    <main>
-        <section class="selection-container">
-            <div class="selection-box" id="melee-box">
-                <h2>Corpo a Corpo (Melee)</h2>
-                <div class="dropdown-content" id="melee-dropdown">
-                    <!-- Opções de Melee aqui -->
-                </div>
-            </div>
+  <main>
+    <!-- Seção de seleção -->
+    <section class="selection-container">
+      <div class="selection-box" id="melee-box">
+        <h2>Corpo a Corpo (Melee)</h2>
+        <div class="dropdown-content" id="melee-dropdown"></div>
+      </div>
 
-            <div class="selection-box" id="sword-box">
-                <h2>Espada</h2>
-                <div class="dropdown-content" id="sword-dropdown">
-                    <!-- Opções de Espada aqui -->
-                </div>
-            </div>
+      <div class="selection-box" id="fruit-box">
+        <h2>Blox Fruit</h2>
+        <div class="dropdown-content" id="fruit-dropdown"></div>
+      </div>
 
-            <div class="selection-box" id="gun-box">
-                <h2>Arma de Fogo (Gun)</h2>
-                <div class="dropdown-content" id="gun-dropdown">
-                    <!-- Opções de Arma de Fogo aqui -->
-                </div>
-            </div>
+      <div class="selection-box" id="sword-box">
+        <h2>Espada</h2>
+        <div class="dropdown-content" id="sword-dropdown"></div>
+      </div>
 
-            <div class="selection-box" id="fruit-box">
-                <h2>Blox Fruit</h2>
-                <div class="dropdown-content" id="fruit-dropdown">
-                    <!-- Opções de Blox Fruit aqui -->
-                </div>
-            </div>
-        </section>
+      <div class="selection-box" id="gun-box">
+        <h2>Arma de Fogo (Gun)</h2>
+        <div class="dropdown-content" id="gun-dropdown"></div>
+      </div>
+    </section>
 
-        <button id="analyze-button">Analisar Build</button>
+    <!-- Seção de pontos: só um bloco selecionável -->
+    <section class="points-container">
+      <div class="point-block" id="point-fruit">Blox Fruit com ponto</div>
+      <div class="point-block" id="point-sword">Espada com ponto</div>
+      <div class="point-block" id="point-gun">Gun com ponto</div>
+    </section>
 
-        <section id="result-section">
-            <!-- Resultados da análise aqui -->
-        </section>
-    </main>
+    <button id="analyze-button">Analisar Build</button>
 
-    <script src="script.js"></script>
+    <section id="result-section"></section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
